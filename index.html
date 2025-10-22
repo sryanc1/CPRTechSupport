@@ -3,12 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cprtechsupport</title>
   </head>
   <body>
-    <div id="app">New Change</div>
+        <div class="hero">
+        <div class="hero-content">
+            <h1>CPR Tech Support</h1>
+            <p>Expert IT Solutions for Your Business</p>
+            <a href="#services" class="cta-button">Get Started</a>
+        </div>
+    </div>
 
-    <script type="module" src="/src/main.js"></script>
+    <!-- Mobile Navigation Toggle -->
+    <button class="nav-toggle" onclick="toggleNav()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#services" onclick="closeNav()">Services</a></li>
+                <li><a href="#about" onclick="closeNav()">About Us</a></li>
+                <li><a href="#solutions" onclick="closeNav()">Solutions</a></li>
+                <li><a href="#support" onclick="closeNav()">Support</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Content Area (Parallax over Hero) -->
+    <div class="content-wrapper">
+        <div class="content">
+            <section id="services">
+                <div class="two-column">
+                    <div class="column">
+                        <h2>Our Services</h2>
+                        <p>We provide comprehensive IT support tailored to your business needs.</p>
+                        
+                        <div class="service-card">
+                            <h3>24/7 Technical Support</h3>
+                            <p>Round-the-clock assistance for all your technical issues.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <h3>Network Management</h3>
+                            <p>Secure and optimize your business network infrastructure.</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <h3>Cloud Solutions</h3>
+                            <p>Seamless migration and management of cloud services.</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <h2>Why Choose Us</h2>
+                        <p>CPR Tech Support brings years of experience and a commitment to excellence in every project.</p>
+                        <p>Our team of certified professionals works tirelessly to ensure your technology infrastructure runs smoothly, allowing you to focus on what matters most - growing your business.</p>
+                        <p>We understand that downtime costs money. That's why we prioritize rapid response times and proactive monitoring to prevent issues before they impact your operations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" style="margin-top: 4rem;">
+                <div class="two-column">
+                    <div class="column">
+                        <h2>About CPR Tech</h2>
+                        <p>Founded with a mission to simplify technology for businesses of all sizes, CPR Tech Support has grown into a trusted partner for companies seeking reliable IT solutions.</p>
+                        <p>Our name reflects our commitment: just like CPR saves lives, we're here to revive and maintain the health of your technology infrastructure.</p>
+                    </div>
+
+                    <div class="column">
+                        <h2>Our Approach</h2>
+                        <p>We believe in building long-term relationships with our clients through transparent communication, proactive support, and innovative solutions.</p>
+                        <p>Every business is unique, and we tailor our services to meet your specific requirements, budget, and goals.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
