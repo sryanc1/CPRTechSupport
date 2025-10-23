@@ -212,7 +212,75 @@
         #animatedSvg {
             width: 100%;
             height: auto;
-            max-width: 400px;
+            max-width: 600px;
+            transition: transform 0.3s ease-out;
+        }
+
+        /* Scene animations */
+        .scene {
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        /* Glow animations */
+        .device-glow, .router-glow, .server-glow, .shield-glow, .cloud-glow {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.5; }
+        }
+
+        /* Network pulse */
+        .network-pulse {
+            animation: networkPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes networkPulse {
+            0%, 100% {
+                stroke-width: 3;
+                opacity: 1;
+            }
+            50% {
+                stroke-width: 6;
+                opacity: 0.6;
+            }
+        }
+
+        /* Network nodes pulse */
+        .network-node {
+            animation: nodePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes nodePulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        /* Cloud breathing */
+        .cloud-glow {
+            animation: cloudBreathe 4s ease-in-out infinite;
+        }
+
+        @keyframes cloudBreathe {
+            0%, 100% {
+                opacity: 0.1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.3;
+                transform: scale(1.1);
+            }
+        }
+
+        /* Shield flash */
+        .shield-path {
+            animation: shieldFlash 3s ease-in-out infinite;
+        }
+
+        @keyframes shieldFlash {
+            0%, 90%, 100% { opacity: 1; }
+            95% { opacity: 0.3; }
         }
 
         /* Tablet and Desktop */
@@ -248,7 +316,7 @@
                 position: sticky;
                 top: 0;
                 width: 100%;
-                height: 50vh;
+                height: 33.3vh;
                 min-height: 300px;
             }
 

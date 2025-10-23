@@ -10,7 +10,7 @@
   <body>
         <div class="hero">
         <div class="hero-content">
-            <h1>CPR Tech Support</h1>
+            <!-- <h1>CPR Tech Support</h1> -->
             <!-- <p>Expert IT Solutions for Your Business</p> -->
             <a href="#services" class="cta-button">Get Started</a>
         </div>
@@ -69,48 +69,202 @@
                     <p>Our name reflects our commitment: just like CPR saves lives, we're here to revive and maintain the health of your technology infrastructure.</p>
                 </section>
 
-                <section id="approach">
-                    <h2>Our Approach</h2>
-                    <p>We believe in building long-term relationships with our clients through transparent communication, proactive support, and innovative solutions.</p>
-                    <p>Every business is unique, and we tailor our services to meet your specific requirements, budget, and goals.</p>
+                <section id="Devices">
+                    <h2>Devices: “Where It All Begins”</h2>
+                    <p>Every great system begins with a single connection — your laptop, your desktop, your printer.</p>
+                    <p>These are the tools that bring your ideas to life and power your daily operations.
+                      When they slow down, so does your business. Reliable, well-maintained devices save time, 
+                      reduce frustration, and keep your work moving forward — without costly downtime.</p>
+                    <em>"We keep your devices healthy and your day running smoothly, from setup to support."</em>
+                </section>
+
+                <section id="Networking">
+                    <h2>Networking: “The Pulse of Productivity”</h2>
+                    <p>Your network is the lifeblood of your business.</p>
+                    <p>It connects your team, devices, and data — but when it’s unstable or poorly configured, everything grinds to a halt. 
+                      A strong, well-managed network ensures your internet, printers, and file shares are always there when you need them. 
+                      It’s the difference between constant disruptions and seamless collaboration.</p>
+                    <em>"We design and maintain fast, reliable networks that keep your business connected — wired or wireless."</em>
+                </section>
+
+                <section id="Servers">
+                    <h2>Servers & Directory Services: “The Brain of Your Business”</h2>
+                    <p>Behind the scenes, servers keep your world organised — managing files, users, logins, and updates.</p>
+                    <p>They ensure the right people have the right access at the right time. If your business is growing, spreadsheets 
+                      and shared folders can only go so far. Servers centralise your information and security, giving you control, consistency, and speed. 
+                      It’s the foundation of a professional, scalable system that grows as you do.
+                      Whether it’s Active Directory, domain controllers, or deployment systems, we make sure it all just works.</p>
+                    <em>"We build structured systems that make managing your business effortless."</em>
+                </section>
+                
+                <section id="Security">
+                    <h2>Security & Firewalls: “Your Digital Immune System”</h2>
+                    <p>Every connection is a doorway — and not every visitor is welcome.</p>
+                    <p>Cyber threats are no longer just for big companies; small businesses are often the easiest targets. 
+                      Firewalls, antivirus, and layered security stop threats before they reach you, protecting your data, reputation, and customer trust. 
+                      If your business relies on technology, security isn’t optional — it’s essential.</p>
+                    <em>"We keep your systems secure so you can focus on what matters most: your work."</em>
+                </section>   
+                
+                <section id="Cloud">
+                    <h2>The Cloud & Internet: “The Lungs of Your System”</h2>
+                    <p>The cloud expands what’s possible — giving you access anywhere, anytime.</p>
+                    <p>If you’re still tied to one computer or location, you’re limiting your flexibility. 
+                      Cloud storage, backups, and collaboration tools keep your data safe, accessible, and always in sync. 
+                      Whether you’re in the office or on the move, the cloud helps your business keep breathing — even when things go wrong.</p>
+                    <em>"We connect you to cloud solutions that scale as you grow — safely and seamlessly."</em>
+                </section>   
+                
+                <section id="Whole">
+                    <h2>The Whole System: “Breathe Life Into Your IT”</h2>
+                    <p>When everything works together — devices, networks, servers, security, cloud — your IT isn’t just functional, it’s alive.</p>
+                    <p>Most tech issues aren’t random — they’re the result of one weak link in the chain. 
+                      We strengthen every part of your system so it runs as one. 
+                      When your technology works in harmony, your people can too.</p>
+                    <em>"From single devices to complete infrastructures — we help you breathe life into your IT."</em>
                 </section>
             </div>
 
             <!-- Image Column (Right) - Fixed position -->
             <div class="image-column">
                 <div class="svg-container" id="svgContainer">
-                    <!-- Simple Server/Network SVG -->
-                    <svg id="animatedSvg" width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Server Rack -->
-                        <g id="server">
-                            <rect x="100" y="80" width="200" height="60" rx="4" stroke="#2aa198" stroke-width="2"/>
-                            <line x1="120" y1="100" x2="170" y2="100" stroke="#268bd2" stroke-width="2"/>
-                            <line x1="120" y1="110" x2="150" y2="110" stroke="#268bd2" stroke-width="2"/>
-                            <circle cx="270" cy="105" r="5" stroke="#2aa198" stroke-width="2"/>
-                            <circle cx="260" cy="105" r="5" stroke="#2aa198" stroke-width="2"/>
+                    <svg id="animatedSvg" width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                        <!-- Scene 1: Laptop and Peripherals -->
+                        <g id="scene1" class="scene">
+                            <!-- Laptop (center) -->
+                            <g id="laptop">
+                                <rect x="350" y="360" width="100" height="70" rx="4" stroke="#2aa198" stroke-width="3" fill="none"/>
+                                <rect x="340" y="430" width="120" height="8" rx="2" stroke="#2aa198" stroke-width="2" fill="none"/>
+                                <circle cx="400" cy="395" r="15" fill="#2aa198" opacity="0.3" class="device-glow"/>
+                            </g>
+
+                            <!-- Peripherals -->
+                            <g id="peripherals" opacity="0">
+                                <!-- Printer -->
+                                <rect x="250" y="380" width="60" height="40" rx="3" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <line x1="310" y1="400" x2="350" y2="400" stroke="#268bd2" stroke-width="2" class="connection-line"/>
+                                <circle cx="280" cy="400" r="8" fill="#268bd2" opacity="0.3" class="device-glow"/>
+
+                                <!-- Mouse -->
+                                <ellipse cx="520" cy="390" rx="20" ry="25" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <line x1="500" y1="390" x2="450" y2="390" stroke="#268bd2" stroke-width="2" class="connection-line"/>
+                                <circle cx="520" cy="390" r="8" fill="#268bd2" opacity="0.3" class="device-glow"/>
+                            </g>
                         </g>
 
-                        <!-- Network Connections -->
-                        <g id="network">
-                            <path d="M 200 140 L 200 180" stroke="#2aa198" stroke-width="2" stroke-dasharray="4 4"/>
-                            <path d="M 200 180 L 150 220" stroke="#268bd2" stroke-width="2"/>
-                            <path d="M 200 180 L 250 220" stroke="#268bd2" stroke-width="2"/>
-                            <circle cx="150" cy="220" r="8" stroke="#2aa198" stroke-width="2"/>
-                            <circle cx="250" cy="220" r="8" stroke="#2aa198" stroke-width="2"/>
+                        <!-- Scene 2: Router and Network -->
+                        <g id="scene2" class="scene" opacity="0">
+                            <!-- Router node -->
+                            <g id="router">
+                                <rect x="375" y="280" width="50" height="35" rx="3" stroke="#2aa198" stroke-width="2" fill="none"/>
+                                <line x1="385" y1="290" x2="395" y2="290" stroke="#2aa198" stroke-width="2"/>
+                                <line x1="405" y1="290" x2="415" y2="290" stroke="#2aa198" stroke-width="2"/>
+                                <circle cx="400" cy="297" r="20" fill="#2aa198" opacity="0.2" class="router-glow"/>
+                            </g>
+
+                            <!-- Connection to devices -->
+                            <line x1="400" y1="315" x2="400" y2="360" stroke="#268bd2" stroke-width="2" class="network-line"/>
+
+                            <!-- Data dots -->
+                            <circle class="data-dot" r="4" fill="#268bd2">
+                                <animateMotion dur="2s" repeatCount="indefinite" path="M400,315 L400,360"/>
+                            </circle>
                         </g>
 
-                        <!-- Cloud -->
-                        <g id="cloud">
-                            <path d="M 150 280 Q 140 270 150 260 Q 160 250 170 260 Q 190 250 200 260 Q 220 250 230 260 Q 240 270 230 280 Z"
-                                  stroke="#2aa198" stroke-width="2" fill="none"/>
-                            <line x1="190" y1="240" x2="190" y2="220" stroke="#268bd2" stroke-width="2" stroke-dasharray="3 3"/>
+                        <!-- Scene 3: Server Hub -->
+                        <g id="scene3" class="scene" opacity="0">
+                            <!-- Central Server -->
+                            <g id="server">
+                                <rect x="360" y="180" width="80" height="100" rx="4" stroke="#2aa198" stroke-width="3" fill="none"/>
+                                <line x1="370" y1="200" x2="430" y2="200" stroke="#268bd2" stroke-width="2"/>
+                                <line x1="370" y1="220" x2="430" y2="220" stroke="#268bd2" stroke-width="2"/>
+                                <line x1="370" y1="240" x2="430" y2="240" stroke="#268bd2" stroke-width="2"/>
+                                <circle cx="400" cy="230" r="35" fill="#2aa198" opacity="0.2" class="server-glow"/>
+                            </g>
+
+                            <!-- User icons -->
+                            <g id="users" opacity="0">
+                                <circle cx="280" cy="230" r="15" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <path d="M280,240 L280,255" stroke="#268bd2" stroke-width="2"/>
+                                <line x1="295" y1="230" x2="360" y2="230" stroke="#268bd2" stroke-width="2" class="user-line"/>
+
+                                <circle cx="520" cy="230" r="15" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <path d="M520,240 L520,255" stroke="#268bd2" stroke-width="2"/>
+                                <line x1="505" y1="230" x2="440" y2="230" stroke="#268bd2" stroke-width="2" class="user-line"/>
+                            </g>
                         </g>
 
-                        <!-- Data Transfer Indicators -->
-                        <g id="dataFlow">
-                            <circle cx="200" cy="160" r="3" fill="#268bd2" opacity="0.8"/>
-                            <circle cx="175" cy="200" r="3" fill="#268bd2" opacity="0.6"/>
-                            <circle cx="225" cy="200" r="3" fill="#268bd2" opacity="0.6"/>
+                        <!-- Scene 4: Security Shield -->
+                        <g id="scene4" class="scene" opacity="0">
+                            <!-- Shield layer -->
+                            <g id="shield">
+                                <path d="M400,150 L480,180 L480,260 Q480,300 400,320 Q320,300 320,260 L320,180 Z"
+                                      stroke="#2aa198" stroke-width="3" fill="none" class="shield-path"/>
+                                <circle cx="400" cy="230" r="90" fill="#2aa198" opacity="0.1" class="shield-glow"/>
+                            </g>
+
+                            <!-- Threat indicators -->
+                            <g id="threats">
+                                <circle class="threat-dot" cx="280" cy="230" r="5" fill="#dc322f" opacity="0.8">
+                                    <animate attributeName="cx" values="280;320;280" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                                <circle class="threat-dot" cx="520" cy="230" r="5" fill="#dc322f" opacity="0.8">
+                                    <animate attributeName="cx" values="520;480;520" dur="3s" repeatCount="indefinite"/>
+                                </circle>
+                            </g>
+                        </g>
+
+                        <!-- Scene 5: Cloud and Internet -->
+                        <g id="scene5" class="scene" opacity="0">
+                            <!-- Cloud elements -->
+                            <g id="clouds">
+                                <ellipse cx="350" cy="80" rx="40" ry="25" stroke="#2aa198" stroke-width="2" fill="none"/>
+                                <ellipse cx="380" cy="70" rx="35" ry="22" stroke="#2aa198" stroke-width="2" fill="none"/>
+                                <ellipse cx="410" cy="80" rx="30" ry="20" stroke="#2aa198" stroke-width="2" fill="none"/>
+                                <circle cx="380" cy="75" r="45" fill="#2aa198" opacity="0.1" class="cloud-glow"/>
+
+                                <ellipse cx="450" cy="90" rx="35" ry="22" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <ellipse cx="470" cy="85" rx="30" ry="18" stroke="#268bd2" stroke-width="2" fill="none"/>
+                                <circle cx="460" cy="87" r="40" fill="#268bd2" opacity="0.1" class="cloud-glow"/>
+                            </g>
+
+                            <!-- Data streams to cloud -->
+                            <line x1="400" y1="150" x2="380" y2="100" stroke="#268bd2" stroke-width="2" stroke-dasharray="5 5" class="cloud-stream"/>
+                            <line x1="400" y1="150" x2="460" y2="110" stroke="#268bd2" stroke-width="2" stroke-dasharray="5 5" class="cloud-stream"/>
+
+                            <!-- Upward data dots -->
+                            <circle class="upload-dot" r="3" fill="#268bd2">
+                                <animateMotion dur="3s" repeatCount="indefinite" path="M400,150 L380,100"/>
+                            </circle>
+                        </g>
+
+                        <!-- Scene 6: Complete Network -->
+                        <g id="scene6" class="scene" opacity="0">
+                            <!-- Full network visualization -->
+                            <g id="fullNetwork">
+                                <!-- Center hub -->
+                                <circle cx="400" cy="400" r="30" stroke="#2aa198" stroke-width="3" fill="none" class="network-pulse"/>
+
+                                <!-- Network ring -->
+                                <circle cx="400" cy="400" r="150" stroke="#268bd2" stroke-width="2" opacity="0.3" fill="none"/>
+
+                                <!-- Connected nodes -->
+                                <circle cx="400" cy="250" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+                                <circle cx="500" cy="350" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+                                <circle cx="500" cy="450" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+                                <circle cx="400" cy="550" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+                                <circle cx="300" cy="450" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+                                <circle cx="300" cy="350" r="15" stroke="#2aa198" stroke-width="2" fill="none" class="network-node"/>
+
+                                <!-- Connection lines -->
+                                <line x1="400" y1="400" x2="400" y2="250" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                                <line x1="400" y1="400" x2="500" y2="350" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                                <line x1="400" y1="400" x2="500" y2="450" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                                <line x1="400" y1="400" x2="400" y2="550" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                                <line x1="400" y1="400" x2="300" y2="450" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                                <line x1="400" y1="400" x2="300" y2="350" stroke="#268bd2" stroke-width="2" opacity="0.5"/>
+                            </g>
                         </g>
                     </svg>
                 </div>
