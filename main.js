@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const users = document.getElementById('users');
 
     let currentScene = 1;
+    let currentZoom = 5.0;
 
     function updateScenes() {
         // Get scroll position
@@ -82,16 +83,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Calculate zoom based on scene progression
         const zoomLevels = {
-            1: 1.5,    // Close-up on laptop
-            2: 1.2,    // Zoom out a bit for router
-            3: 1.0,    // Medium view for server
-            4: 0.85,   // Wider for security
-            5: 0.7,    // Even wider for cloud
-            6: 0.6     // Full network view
+            1: 5.0,    // Very close-up on laptop
+            2: 3.5,    // Zoom out for router
+            3: 2.0,    // Medium view for server
+            4: 1.2,    // Wider for security
+            5: 0.8,    // Even wider for cloud
+            6: 0.5     // Full network view
         };
 
-        const targetZoom = zoomLevels[currentScene] || 1;
-        svg.style.transform = `scale(${targetZoom})`;
+        const targetZoom = zoomLevels[currentScene];
+
+        // Smooth interpolation to prevent jumps
+        if (targetZoom !== undefined) {
+            const zoomSpeed = 0.1; // Adjust for smoother/faster transitions
+            currentZoom += (targetZoom - currentZoom) * zoomSpeed;
+            svg.style.transform = `scale(${currentZoom})`;
+        }
 
         // Scene-specific animations
         animateCurrentScene(currentScene, relativeScroll);

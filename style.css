@@ -101,7 +101,6 @@
             position: fixed;
             left: -280px;
             top: 0;
-            width: 280px;
             height: 100vh;
             background: var(--secondary-dark);
             z-index: 999;
@@ -294,7 +293,7 @@
             }
 
             .content {
-                margin-left: 280px;
+                margin-left: 150px;
             }
 
             .text-column {
